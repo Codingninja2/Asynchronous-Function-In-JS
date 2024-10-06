@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASYCHRONOUS FUNCTONS IN JS</title>
+</head>
+<body>
+    
+    <h2>JavaScript async / await</h2>
+<h1 id="result"></h1>
+
+<script>
+    // Define an asynchronous function using async/await
+    async function product(a, b) {
+        let response = await a * b;
+        display(response); // Call display function to show the result
+    }
+
+    // Function to display the result in the HTML element with id 'result'
+    function display(some) {
+        document.getElementById("result").innerHTML = some;
+    }
+
+    // Call the asynchronous function
+    product(5, 20);
+</script>
+
+</body>
+</html>
